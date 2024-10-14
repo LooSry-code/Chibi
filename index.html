@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSHT</title>
+        <style>
+            body {
+                background-image: url(image/g6.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            h2 {
+                color :blanchedalmond;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40vh;
+                font-weight: bold;
+                font-family: cursive;
+                text-shadow: 2px 2px 4px black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>One Day Or Day One</h2>
+        <ul>
+            <li class="text2">One</li>
+            <li class="text">Two</li>
+            <li class="text">Three</li>
+        </ul>
+        <h1 id="title">Paragraf</h1>
+        <p>ini Paragraf</p>
+        <!-- <script src="script.js"></script> -->
+         <script>
+            console.log(document.querySelectorAll(`li`))
+            let list = document.querySelectorAll(`li`)
+            list[0].style.color = 'red'
+            list[1].style.color = `green`
+
+
+            const title = document.getElementById(`title`)
+            console.log(title)
+
+            const text = document.getElementsByClassName(`text`)
+            console.log(text)
+
+            const el = document.getElementsByTagName(`li`)
+            console.log(el)
+
+            const element = document.querySelector(`li.text`)
+            console.log(element)
+
+            const queryAll = document.querySelectorAll(`li.text`)
+            console.log(queryAll)
+
+         </script>
+    </body>
+</html>

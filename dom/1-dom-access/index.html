@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Access</title>
+</head>
+<body>
+    <h1 id="title">Ini Title</h1>
+    <p class="text">Ini Text kapan jadi</p>
+    <ul>
+        <li class="text">list 1</li>
+        <li class="text">list 2</li>
+        <li>list 3</li>
+    </ul>
+    <script>
+        // getElementById
+        console.log(document.getElementById(`title`))       
+
+        // getElementsByClassName
+        console.log(document.getElementsByClassName(`text`))
+        const text = document.getElementsByTagName(`p`)
+        console.log(text)
+
+        const liText = document.querySelector(`li.text`)
+        console.log(liText)
+
+        const liTextAll = document.querySelectorAll(`li.text`)
+        console.log(liTextAll)
+    </script>
+</body>
+</html>

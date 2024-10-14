@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-handling</title>
+</head>
+<body>
+    <!-- <button onclick="alert(`Button ini di click`)">Click Me</button> -->
+    <!-- inline onclick, ondblclick -->
+    <button onclick="getClick()">CLick me</button> 
+    <button id="submit">Submit</button>
+    <p id="text">ini text singkat</p>
+    <script>
+        //function getClick() {
+        //    alert(`Button di pencet`)
+        //}
+        //const button =  document.getElementById(`submit`)
+        //button.addEventListener(`click`, () => {
+        //    alert(`Submitted`)
+        //})
+        //button.addEventListener(`mouseout`, () => {
+        //    alert(`Mouse out`)
+        //})
+
+        const text = document.getElementById(`text`)
+        //console.log(p_text)
+        function getClick() {
+            text.style.backgroundColor = `red`
+        }
+        text.addEventListener(`mouseover`, () => {
+            text.style.color = `blue`
+        })
+        text.addEventListener(`mouseout`, () => {
+            text.style.color = `black`
+            text.style.backgroundColor = `#fff23345`
+            text.style.cursor = `pointer`
+        })
+    </script>
+</body>
+</html>
